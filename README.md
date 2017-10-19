@@ -7,7 +7,7 @@ This tool takes an input stream, STDIN or a file, verifies that it is correct js
 
 ### Why 
 
-I needed a `json_xs` to pretty print json. Was simple enough i was like "Hey! why don't I just make another one". Of course I'm using the [json crate](https://crates.io/crates/json).
+I needed a `json_xs` type tool to pretty print some json. It was a simple enough tool, I thought "Hey! why don't I just make another one". I'm using the [json crate](https://crates.io/crates/json).
 
 ### Example
 

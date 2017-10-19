@@ -19,17 +19,17 @@ pub fn parse_args() -> Args {
     let args = App::new(PROGRAM_NAME)
         .version(VERSION)
         .author("Russell W. Bentley <russell.w.bentley@icloud.com>")
-        .about("A for verifying and formatting json")
+        .about("A tool for verifying and formatting json")
         .arg(
             Arg::with_name("INPUT")
-                .help("The file to use as input")
+                .help("The file to use as input, defaults to STDIN")
                 .long("input")
                 .value_name("input/file.json")
                 .takes_value(true),
         )
         .arg(
             Arg::with_name("OUTPUT")
-                .help("The file to use as output")
+                .help("The file to use as output, defaults to STDOUT")
                 .long("output")
                 .value_name("output/fie.ex")
                 .takes_value(true),
