@@ -51,12 +51,8 @@ pub fn parse_args() -> Args {
         )
         .get_matches();
 
-    let input_path_option = args.value_of("INPUT").map(
-        |raw_path| PathBuf::from(raw_path),
-    );
-    let output_path_option = args.value_of("OUTPUT").map(
-        |raw_path| PathBuf::from(raw_path),
-    );
+    let input_path_option = args.value_of("INPUT").map(PathBuf::from);
+    let output_path_option = args.value_of("OUTPUT").map(PathBuf::from);
     let indent_spaces = str::parse::<u16>(args.value_of("INDENT_SPACES").unwrap())
         .expect("Must pass number to --indent-spaces");
 
